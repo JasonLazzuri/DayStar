@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daystar</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Day Start Ministries</title>
+
+    <!-- Bootstrap Core CSS -->
+    <%= stylesheet_link_tag 'bootstrap.min.css' %>
+
+    <!-- Custom Fonts -->
+    <%= stylesheet_link_tag 'font-awesome.min.css' %>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <%= stylesheet_link_tag 'agency.min.css' %>
+    <%= stylesheet_link_tag 'application.css' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <span class="copyright">Copyright &copy; 2017 Made by Jason Lazzuri</span>
+              </div>
+              <div class="col-md-4">
+                  <ul class="list-inline social-buttons">
+                      </li>
+                      <li><a href="https://www.facebook.com/JasonLazzuri"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li><a href="https://www.linkedin.com/in/jasonlazzuriwebdeveloper/"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                <% is_admin? %>
+                <%= link_to 'Login', new_user_session_path %>
+                  <ul class="list-inline quicklinks">
+                    <%= mail_to('JasonBuildsWebsites@gmail.com', 'Need A Website? Contact me') %>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
+</html>

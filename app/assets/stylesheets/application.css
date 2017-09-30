@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ //= require_tree .
+ *= require font-awesome
+
+ */
+
+
+ header {
+   background-image: url('header-bg.jpg');
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+   text-align: center;
+ }
+#mainNav{
+  height: 100px;
+}
+
+.logo img{
+  width: 200px;
+}
+
+#weld img{
+  width: 250px;
+}
+
+section#contact {
+  background-color: #222222;
+  background-image: url('map-image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-xl {
+  color: white;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-top: 25px;
+  padding: 20px 40px;
+}
+
+.timeline > li .timeline-image {
+
+    border: 7px solid #cccccc;
+    text-align: center;
+}
